@@ -25,3 +25,4 @@ function ConvertirCelsius() {
     //Carga la variable del valor en la caja kilometros de la página.
     document.getElementById("cajafahrenheit").value = Fahrenheit;
 }
+formatResultToInput('cajakilometros', '45.6785678', 1)

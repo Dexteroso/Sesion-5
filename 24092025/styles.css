@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(252, 250, 247);
+}
+H1{
+    color: #68AE36;
+}
+h2{
+    color: #404042;
+}
+
+label {
+color: #68AE36;
+}
+
+.button {
+    height: 25px;
+    padding: 0 12px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 10px;
+    border-color: #e59a20;
+    font-weight: bold;
+    background-color: #e59a20;
+    color: #fff;
+}

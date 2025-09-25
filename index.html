@@ -10,50 +10,52 @@
     </header>
 
     <body>
-        <img src="IMG/Distance_Converter.jpeg" alt="Distance Converter" width="100" height="100">
-        <h2>Convertidor de <span>Metros a Kilómetros</span></h2>
-        <p><strong>Descripción: </strong>Un programa que convierte distancias de metros a kilómetros.</p>
-        <label for="">Ingresa el número a convertir en metros</label>
-        <input type="text" id="cajametros" />
-        <button class="button" onclick="converirMetrosKilometros();">Convertir</button>
-        <script src="codigo.js"></script>
-        <br>
-        <br>
-        <label for="">El resultado en kilómetros es:</label>
-        <input type="text" id="cajakilometros" disabled />
-        <br>
-        <br>
-        <br>
-        <br>
-        <img src="IMG/BMI_Calculator.jpeg" alt="BMI Calculator" width="100" radius="50%">
-        <h2>Calculadora de <span>IMC (Índice de Masa Corporal)</span></h2>
-        <p><strong>Descripción: </strong>Un programa que calcula el IMC a partir del peso y la altura del usuario.</p>
-        <label for="">Peso (kg)</label>
-        <input type="text" id="cajapeso" />
-        <br>
-        <br>
-        <label for="">Altura (m)</label>
-        <input type="text" id="cajaaltura" />
-        <br>
-        <br>
-        <button class="button" onclick="ObtenerIMC()">Convertir</button>
-        <br>
-        <br>
-        <label for="">IMC</label>
-        <input type="text" id="cajaimc" disabled />
-        <br>
-        <br>
-        <br>
-        <br>
-        <img src="IMG/Temperature_Converter.jpeg" alt="Temperature Calculator" width="100">
-        <h2>Convertidor de <span>Temperatura</span></h2>
-        <p><strong>Descripción: </strong>Un programa que convierte temperaturas entre Celsius y Fahrenheit.</p>
-        <label for="">Celsius</label>
-        <input type="text" id="cajacelsius" />
-        <button class="button" onclick="ConvertirCelsius()">Convertir</button>
-        <br>
-        <br>
-        <label for="">Fahrenheit</label>
-        <input type="text" id="cajafahrenheit" disabled />
+        <div class="containers">
+            <div class="calculators" id="calculadora1">
+                <img src="IMG/Distance_Converter.jpeg" alt="Distance Converter" width="100" height="100">
+                <h2>Convertidor de <span>Metros a Kilómetros</span></h2>
+                <p><strong>Descripción: </strong>Un programa que convierte distancias de metros a kilómetros.</p>
+                <label for="">Ingresa el número a convertir en Kilómetros</label>
+                <br><br>
+                <input type="text" id="cajametros" placeholder="Metros" />
+                <button class="button" onclick="converirMetrosKilometros();">Convertir</button>
+                <script src="codigo.js"></script>
+                <br>
+                <br>
+                <label for="">Kilómetros = </label>
+                <input type="text" id="cajakilometros" disabled />
+            </div>
+            <div class="calculators" id="calculadora2">
+                <img src="IMG/BMI_Calculator.jpeg" alt="BMI Calculator" width="100" radius="50%">
+                <h2>Calculadora de <span>IMC (Índice de Masa Corporal)</span></h2>
+                <p><strong>Descripción: </strong>Un programa que calcula el IMC a partir del peso y la altura del
+                    usuario.</p>
+                <label for="">Peso</label>
+                <input type="text" id="cajapeso" placeholder="Peso en kilogramos" />
+                <br>
+                <br>
+                <label for="">Altura</label>
+                <input type="text" id="cajaaltura" placeholder="Altura en metros" />
+                <br>
+                <br>
+                <button class="button" onclick="ObtenerIMC()">Convertir</button>
+                <br>
+                <br>
+                <label for="">IMC = </label>
+                <input type="text" id="cajaimc" disabled />
+            </div>
+            <div class="calculators" id="calculadora3">
+                <img src="IMG/Temperature_Converter.jpeg" alt="Temperature Calculator" width="100">
+                <h2>Convertidor de <span>Temperatura</span></h2>
+                <p><strong>Descripción: </strong>Un programa que convierte temperaturas entre Celsius y Fahrenheit.</p>
+                <label for="">Celsius</label>
+                <input type="text" id="cajacelsius" placeholder="Grados Celsius" />
+                <button class="button" onclick="ConvertirCelsius()">Convertir</button>
+                <br>
+                <br>
+                <label for="">Fahrenheit = </label>
+                <input type="text" id="cajafahrenheit" disabled />
+            </div>
+        </div>
     </body>
 </HTML:5>
