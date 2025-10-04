@@ -18,12 +18,18 @@
                 <label for="">Ingresa el número a convertir en Kilómetros</label>
                 <br><br>
                 <input type="text" id="cajametros" placeholder="Metros" />
+                <br>
+                <br>
                 <button class="button" onclick="converirMetrosKilometros();">Convertir</button>
                 <script src="codigo.js"></script>
                 <br>
                 <br>
-                <label for="">Kilómetros = </label>
-                <input type="text" id="cajakilometros" disabled />
+                <button onclick="BorrarCamposPeso()">Borrar</button>
+                <br>
+                <br>
+                <label for="">Kilómetros</label>
+                <!-- <input type="text" id="cajakilometros" disabled /> -->
+                <p class="result" id="Kilometros"></p>
             </div>
             <div class="calculators" id="calculadora2">
                 <img src="IMG/BMI_Calculator.jpeg" alt="BMI Calculator" width="100" radius="50%">
@@ -41,20 +47,30 @@
                 <button class="button" onclick="ObtenerIMC()">Convertir</button>
                 <br>
                 <br>
-                <label for="">IMC = </label>
-                <input type="text" id="cajaimc" disabled />
+                <button onclick="BorrarCamposIMC()">Borrar</button>
+                <br>
+                <br>
+                <label for="">IMC</label>
+                <!-- <input type="text" id="cajaimc" disabled /> -->
+                <p class="result" id="IMC"></p>
             </div>
             <div class="calculators" id="calculadora3">
                 <img src="IMG/Temperature_Converter.jpeg" alt="Temperature Calculator" width="100">
                 <h2>Convertidor de <span>Temperatura</span></h2>
                 <p><strong>Descripción: </strong>Un programa que convierte temperaturas entre Celsius y Fahrenheit.</p>
-                <label for="">Celsius</label>
+                <!-- <label for="">Celsius</label> -->
                 <input type="text" id="cajacelsius" placeholder="Grados Celsius" />
+                <br>
+                <br>
                 <button class="button" onclick="ConvertirCelsius()">Convertir</button>
                 <br>
                 <br>
-                <label for="">Fahrenheit = </label>
-                <input type="text" id="cajafahrenheit" disabled />
+                <button onclick="BorrarCampos()">Borrar</button>
+                <br>
+                <br>
+                <label for="">Grados Fahrenheit</label>
+                <!-- <input type="text" id="cajafahrenheit" disabled /> -->
+                <p class="result" id="Fahrenheit"></p>
             </div>
         </div>
     </body>

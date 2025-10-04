@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Prespuesto</title>
+</head>
+
+<body>
+    <h1>Programa para explicar <span class="highlight">Event Listeners</span> para los eventos y uso de bucles <span
+            class="highlight">FOR</span> para la ejecución iterativa</h1>
+    <p>Un "listener" es un objeto o función que espera a que ocurra un evento (como un clic, un movimiento del ratón o
+        la entrada de texto).
+        Cuando el evento sucede, el listener lo detecta y ejecuta el código que se le ha asignado para responder.</p>
+    <h4>Estructura del Event Linstener</h4>
+    <div class="code-block">
+        <p class="comment">// 1. Selecciona el elemento objetivo</p>
+        <p> <span style="color: #e59a20; font-weight: 500;">const</span> miBoton = document.getElementById(<span
+                style="color: #074c85; font-weight: 500;">'miBoton'</span>);</p>
+        <p class="comment">// 2. Define la función que se ejecutará</p>
+        <p><span style="color: #e59a20;">function</span> mostrarMensaje() {</p>
+        <p>alert(<span style="color: #074c85; font-weight: 500;">'¡Se ha hecho clic en el botón!'</span>);</p>
+        <p>}</p>
+        <p class="comment">// 3. Agrega el Event Listener</p>
+        <p>miBoton.addEventListener(<span style="color: #074c85; font-weight: 500;">'click'</span>, mostrarMensaje);</p>
+        <br>
+        <p>En este ejemplo, miBoton es el elemento objetivo, 'click' es el tipo de evento, y manejarClick es la función
+            que se ejecuta cuando el botón es clickeado.</p>
+    </div>
+    <h4>Estructura del bucle For</h4>
+    <div class="code-block">
+        <p> <span style="color: #e59a20; font-weight: 500;">for</span> (inicialización; condición; incremento) {</span></p>
+        <p class="comment">// Código que se ejecuta en cada iteración</p>
+        <p>}</p>
+    </div>
+    <div class="containers">
+        <div class="calculators">
+            <h2>Ejercicio 1</h2>
+            <h1 class="calculator-title">Distribución del presupuesto</h1>
+            <br>
+            <label for="">Presupuesto</label>
+            <input type="text" id="caja_presupuesto" placeholder="Ingrese la cantidad" />
+            <br><br>
+            <label for="">Meses</label>
+            <input type="text" id="caja_meses" placeholder="Ingrese los periodos" />
+            <br><br>
+            <button class="button" id="Distribuir">Distribuir</button>
+            <br><br>
+            <textarea id="area" cols="50" rows="11"></textarea>
+            <br><br>
+            <script src="presupuesto.js"></script>
+            <!--
+        B
+        o
+        r
+        r
+        a
+        r
+        -->
+            <button class="button2" onclick="BorrarCampos()">Borrar</button>
+        </div>
+        <div class="calculators">
+            <h2>Ejercicio 2</h2>
+            <h1 class="calculator-title">Tablas de Multiplicar</h1>
+            <br>
+            <label for="">Factor</label>
+            <input type="text" id="Factor1" placeholder="Número a multiplicar" />
+            <br><br>
+            <button class="button" id="Multiplicar">Multiplicar</button>
+            <br><br>
+            <textarea id="area2" cols="50" rows="12"></textarea>
+            <br><br>
+            <script src="presupuesto.js"></script>
+            <!--
+        B
+        o
+        r
+        r
+        a
+        r
+        -->
+            <button class="button2" onclick="BorrarCampos()">Borrar</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -10,22 +10,84 @@
 
 <body>
     <h1>Ejemplo para el manejo de cadenas</h1>
-    <h2>Captura de nuevo cliente</h2>
+
     <div class="containers">
-        <label for="">Nombre(s) Completo(s)</label>
-        <input type="text" id="caja_nombres" />
-        <br><br>
-        <label for="">Apellido Paterno</label>
-        <input type="text" id="caja_paterno" />
-        <br><br>
-        <label for="">Apellido Materno</label>
-        <input type="text" id="caja_materno" />
-        <br><br>
-        <button class="button" onclick="concatenarCadenas()">Generar</button>
+        <div class="personal-info">
+            <h2>Nombre Completo</h2>
+            <label for="">Apellido Paterno</label>
+            <input type="text" id="caja_paterno" placeholder="González" />
+            <br><br>
+            <label for="">Apellido Materno</label>
+            <input type="text" id="caja_materno" placeholder="Martínez" />
+            <br><br>
+            <label for="">Nombre(s)</label>
+            <input type="text" id="caja_nombres" placeholder="Juan Alberto" />
+            <br><br>
+            <label for="">Nombre Completo</label>
+            <input type="text" id="caja_nombre_completo" disabled />
+            <div class="mini-container">
+                <label for="">Longitud</label>
+                <input type="text" id="caja_longitud" disabled />
+                <label for="">Posición 3</label>
+                <input type="text" id="caja_posicion" disabled />
+            </div>
+        </div>
+
+        <!-- <button class="button" onclick="concatenarCadenas()">Generar</button>
         <script src="cadena.js"></script>
         <br><br>
         <label for="">Nombre Completo</label>
-        <input type="text" id="caja_nombre_completo" disabled />
+        <input type="text" id="caja_nombre_completo" disabled /> -->
+        <!--
+        F
+        e
+        c
+        h
+        a
+        -->
+        <div class="personal-info">
+            <h2>Fecha de Nacimiento</h2>
+            <br>
+            <label for="">Día</label>
+            <input type="text" id="caja_día" placeholder="15" />
+            <br><br>
+            <label for="">Mes</label>
+            <input type="text" id="caja_mes" placeholder="03" />
+            <br><br>
+            <label for="">Año</label>
+            <input type="text" id="caja_año" placeholder="2003" />
+            <br><br>
+            <label for="">Fecha</label>
+            <input type="text" id="caja_fecha" disabled />
+        </div>
+    </div>
+    <!-- <button class="button" onclick="concatenarfecha()">Generar</button>
+        <script src="cadena.js"></script>
+        <br><br>
+        <label for="">Fecha</label>
+        <input type="text" id="caja_fecha" disabled />
+        <br><br> -->
+    <div class="rfc-btn">
+        <label for="">RFC</label>
+        <br><br>
+        <input type="text" id="caja_rfc" disabled />
+        <br><br>
+        <div class="rfc-buttons">
+            <button class="button" onclick="concatenarRFC()">Generar</button>
+            <script src="cadena.js"></script>
+            <button class="button2" onclick="BorrarCampos()">Borrar</button>
+        </div>
+    </div>
+
+
+    <!-- 
+        <label for="">Mayúsculas</label>
+        <input type="text" id="caja_mayúsculas" disabled />
+        <br><br>
+        <label for="">Minúsculas</label>
+        <input type="text" id="caja_minúsculas" disabled />
+        <br><br>
+        -->
     </div>
 </body>
 
